@@ -22,7 +22,7 @@ body::before {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-image: url("./assets/images/bg.jpg");
+	background-image: url("./assets/images/bg-image.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -40,4 +40,134 @@ body::before {
 ::-webkit-scrollbar-thumb {
 	background: #f59e0b !important;
 	border-radius: 5px;
-}
+}.room {
+	width: 83.8%;
+	height: 87vh;
+	/* background: linear-gradient(to top right, rgba(148, 163, 184, 0.3), rgba(107, 114, 128, 0.3), rgba(71, 85, 105, 0.3));
+	backdrop-filter: blur(10px); */
+	/* background-color:black ; */
+	/* display: grid;
+	place-items: center;
+	perspective: 100rem; */
+	overflow: hidden;
+	/* z-index: -1; */
+	position: absolute;
+	margin-top: 19px;
+	border: 1px solid rgba(255, 193, 180, 0.3);
+	overflow: hidden;
+	
+	
+  }
+  
+  .btn {
+	width: 15rem;
+	height: 15rem;
+	background-color: #eee;
+	color: rgb(252, 35, 7);
+	position: relative;
+	top: 10rem;
+	left: -40rem;
+	border-radius: 50% 50% 0 50%;
+	border: 0.3rem dashed rgb(252, 35, 7);
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	line-height: 1.5;
+	cursor: pointer;
+  }
+  
+  .table {
+	width: 30rem;
+	height: 45rem;
+	background-image: radial-gradient(
+	  rgba(255, 255, 255, 0.9),
+	  rgba(38, 191, 230, 0.9)
+	);
+	border-radius: 50%;
+	border-bottom: 2rem solid rgb(153, 233, 253);
+	transform: rotateX(80deg) translateZ(10rem);
+	transform-style: preserve-3d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: transform 2s 1s;
+	border:2rem solid #E38E49;
+	margin-top: 80px;
+	
+  }
+  
+  .table.change {
+	transform: rotateX(80deg) translateY(30rem) translateZ(10rem);
+	transition: transform 2s;
+  }
+  
+  .letter {
+	width: 15rem;
+	height: 25rem;
+	background-color: #fff;
+	padding: 2rem 1rem 2rem 1rem;
+	color: #555;
+	box-shadow: 0 0 0.1rem #aaa;
+	font-family: "Dancing Script", cursive;
+	font-size: 1.5rem;
+	text-indent: 0.5rem;
+	transform-origin: bottom;
+	transition: transform 1s;
+  }
+  
+  .change .letter {
+	transform: rotateX(-80deg);
+	transition: transform 1s 2s;
+  }
+  
+  .table-leg {
+	width: 2rem;
+	height: 20rem;
+	background-color: rgba(29, 113, 116, 0.8);
+	position: absolute;
+	top: 30rem;
+	left: 12.5rem;
+  }
+  
+  .table-leg-1 {
+	transform: rotateX(-60deg) rotateZ(40deg);
+	transform-origin: top;
+	border-radius: 5rem 1rem;
+	border-right: 0.3rem solid rgb(38, 85, 87);
+	border-bottom: 0.3rem solid rgb(38, 85, 87);
+  }
+  
+  .table-leg-2 {
+	transform: rotateX(-60deg) rotateZ(-40deg);
+	transform-origin: top;
+	border-radius: 1rem 5rem;
+	border-left: 0.3rem solid rgb(38, 85, 87);
+	border-bottom: 0.3rem solid rgb(38, 85, 87);
+  }
+  
+  .table-leg-3 {
+	transform: rotateX(-140deg);
+	transform-origin: top;
+	border-radius: 1rem;
+	border-left: 0.3rem solid rgb(38, 85, 87);
+	border-right: 0.3rem solid rgb(38, 85, 87);
+  }
+  
+  .floor {
+	width: 120rem;
+	height: 140rem;
+	background-image: repeating-conic-gradient(
+	  from 90deg,
+	  #faf3f3 0deg 90deg,
+	  #F72C5B 90deg 180deg
+	);
+	background-size: 10rem 10rem;
+	border-radius: 50%;
+	border: 15rem solid #D70654;
+	position: absolute;
+	transform: translateZ(-23rem);
+	box-shadow: inset -5rem -5rem 10rem #f4efef, inset 5rem 5rem 10rem #f6f2f2;
+  }
+  
+  
+  

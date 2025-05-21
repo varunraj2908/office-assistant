@@ -109,8 +109,82 @@ export const Board: Columns = {
 			},
 		],
 	},
-	done: {
-		name: "Done",
+
+	deployed: {
+		name: "Deployed",
+		items: [
+			{
+				id: uuidv4(),
+				title: "Admin Panel Front-end",
+				description: "Lorem ipsum dolor sit amet ..",
+				priority: "low",
+				deadline: 50,
+				tags: [
+					{ title: "Test", ...getRandomColors() },
+					{ title: "Front", ...getRandomColors() },
+				],
+			},
+			{
+				id: uuidv4(),
+				title: "Admin Panel Back-end",
+				description: "Lorem ipsum dolor sit amet ..",
+				priority: "medium",
+				deadline: 50,
+				tags: [
+					{ title: "Test", ...getRandomColors() },
+					{ title: "Front", ...getRandomColors() },
+				],
+			},
+		],
+	},
+	completed: {
+		name: "Completed",
+		items: [
+			{
+				id: uuidv4(),
+				title: "Admin Panel Front-end",
+				description: "Lorem ipsum dolor sit amet ..",
+				priority: "low",
+				deadline: 50,
+				tags: [
+					{ title: "Test", ...getRandomColors() },
+					{ title: "Front", ...getRandomColors() },
+				],
+			},
+			{
+				id: uuidv4(),
+				title: "Admin Panel Back-end",
+				description: "Lorem ipsum dolor sit amet ..",
+				priority: "medium",
+				deadline: 50,
+				tags: [
+					{ title: "Test", ...getRandomColors() },
+					{ title: "Front", ...getRandomColors() },
+				],
+			},
+		],
+	},
+	testing: {
+		name: "Testing",
+		items: [
+			{
+				id: uuidv4(),
+				title: "Admin Panel Front-end",
+				description: "Lorem ipsum dolor sit amet ..",
+				priority: "high",
+				deadline: 50,
+				image: taskImage,
+				alt: "task image",
+				tags: [
+					{ title: "Test", ...getRandomColors() },
+					{ title: "Front", ...getRandomColors() },
+				],
+			},
+		],
+	},
+
+	testingCompleted: {
+		name: "Testing Completed",
 		items: [
 			{
 				id: uuidv4(),
