@@ -1,5 +1,5 @@
 import { useAITeacher } from "./../../hooks/useAITeacher";
-import React, { useState } from "react";
+import { useState } from "react";
 import { CameraControls, Environment, Float, useGLTF } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { Leva, button, useControls } from "leva";
@@ -7,7 +7,6 @@ import { Suspense, useEffect, useRef } from "react";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import AnimatedBg from "./../../AnimatedBg.json";
 import AIavatar from "./../../Aiavtar.json";
-import RoundAnimation from "./../../RoundAnimation.json";
 import VoiceAnimation from "./../../VoiceAnimation.json";
 import NuralinkAnimation from "./../../NuralinkAnimation.json";
 import Table from "./../../Table.json";
@@ -162,7 +161,7 @@ const Assistant = () => {
     if (SpeechRecognition) {
       recognition = new SpeechRecognition();
       recognition.lang = "en-IN";
-      recognition.onresult = (e: SpeechRecognitionEvent) => {
+      recognition.onresult = (e: SpeechRecognitionResult) => {
         const currentIndex = e.resultIndex;
         const transcript = e.results[currentIndex][0].transcript;
         setPrompt(transcript);
@@ -391,8 +390,8 @@ const CAMERA_ZOOMS = {
 
 const CameraManager = () => {
   const controls = useRef();
-  const loading = useAITeacher((state) => state.loading);
-  const currentMessage = useAITeacher((state) => state.currentMessage);
+  const loading = useAITeacher((state:any) => state.loading);
+  const currentMessage = useAITeacher((state:any) => state.currentMessage);
 
   useEffect(() => {
     if (loading) {
