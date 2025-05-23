@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { PersonCircle, TimeOutline, TrashSharp } from "react-ionicons";
+import { PersonCircle, TimeOutline } from "react-ionicons";
 import { TaskT } from "../../types";
-import EditModal from "../EditModal";
+
 
 interface TaskProps {
   task: TaskT;

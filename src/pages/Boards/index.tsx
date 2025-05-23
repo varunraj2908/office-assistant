@@ -16,9 +16,7 @@ const Home = () => {
   const [openEditModal, setOpenEditModal] = useState(false);
   const [deleteModal, setDeleteModal] = useState(false);
   const [selectedColumn, setSelectedColumn] = useState("");
-  const [currentTask, setIsCurentTask] = useState("");
-
-  console.log("==============yyyyyyyyy",currentTask)
+  const [currentTask, setIsCurentTask] = useState<any>("");
 
   const openModal = (columnId: any) => {
     setSelectedColumn(columnId);

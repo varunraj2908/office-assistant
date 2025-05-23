@@ -1,25 +1,25 @@
-import {teachers, useAITeacher } from "./../../hooks/useAITeacher";
+import {teachers, useAITeacher } from "./../../src/hooks/useAITeacher";
 
 export const BoardSettings = () => {
-  const furigana = useAITeacher((state) => state.furigana);
-  const setFurigana = useAITeacher((state) => state.setFurigana);
+  const furigana = useAITeacher((state:any) => state.furigana);
+  const setFurigana = useAITeacher((state:any) => state.setFurigana);
 
-  const english = useAITeacher((state) => state.english);
-  const setEnglish = useAITeacher((state) => state.setEnglish);
+  const english = useAITeacher((state:any) => state.english);
+  const setEnglish = useAITeacher((state:any) => state.setEnglish);
 
-  const teacher = useAITeacher((state) => state.teacher);
-  const setTeacher = useAITeacher((state) => state.setTeacher);
+  const teacher = useAITeacher((state:any) => state.teacher);
+  const setTeacher = useAITeacher((state:any) => state.setTeacher);
 
-  const speech = useAITeacher((state) => state.speech);
-  const setSpeech = useAITeacher((state) => state.setSpeech);
+  const speech = useAITeacher((state:any) => state.speech);
+  const setSpeech = useAITeacher((state:any) => state.setSpeech);
 
-  const classroom = useAITeacher((state) => state.classroom);
-  const setClassroom = useAITeacher((state) => state.setClassroom);
+  const classroom = useAITeacher((state:any) => state.classroom);
+  const setClassroom = useAITeacher((state:any) => state.setClassroom);
 
   return (
     <>
       <div className="absolute right-0 bottom-full flex flex-row gap-10 mb-20">
-        {teachers.map((sensei, idx) => (
+        {teachers.map((sensei:any, idx:number) => (
           <div
             key={idx}
             className={`p-3 transition-colors duration-500 ${

@@ -1,4 +1,4 @@
-import { teachers, useAITeacher } from "./../hooks/useAITeacher";
+import { teachers, useAITeacher } from "../hooks/useAITeacher";
 import { Html, useAnimations, useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { useEffect, useRef, useState } from "react";
@@ -7,7 +7,7 @@ import { randInt } from "three/src/math/MathUtils.js";
 
 const ANIMATION_FADE_TIME = 0.5;
 
-export function Teacher({ teacher, ...props }) {
+export function Teacher({ teacher, ...props }:any) {
   const group = useRef<Group | null>(null);
   const { scene } = useGLTF(`/models/Teacher_${teacher}.glb`);
   useEffect(() => {
